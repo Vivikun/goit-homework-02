@@ -7,11 +7,26 @@ body {
 
 .button {
   cursor: pointer;
+  color: var(--color);
+}
+.button:hover{
+opacity: 1;
+  background-color: #2196F3;
+  color: #FFFFFF;;
+}
+
+.link{
+  color: #212121;
 }
 
 .link:hover,
 :focus {
-  color: inherit;
+  color: #2196F3;;
+  opacity: 1;
+}
+
+.logo:hover{
+  color: red;
   opacity: 1;
 }
 
