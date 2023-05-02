@@ -1,43 +1,54 @@
 /* WebStudio */
 body {
-  --color: #212121;
-  ;
+  color: #212121;
   font-family: 'Roboto', sans-serif;
 }
 
 .button {
   cursor: pointer;
-  color: var(--color);
 }
 .button:hover{
-opacity: 1;
   background-color: #2196F3;
   color: #FFFFFF;;
+}
+.logo{
+  font-weight: 700;
+}
+.logo:hover,:focus{
+  color: #2196F3;
 }
 
 .link{
   color: #212121;
 }
 
-.link:hover,
-:focus {
-  color: #2196F3;;
-  opacity: 1;
-}
-
-.logo:hover{
-  color: red;
-  opacity: 1;
+.link:hover,:focus {
+  color: #2196F3;
 }
 
 .text {
   font-size: 18px;
   line-height: 1.6;
-  color: var(--color);
 }
 
 .basic-text {
   font-size: 16px;
   line-height: 1.8;
   color: #757575;
+}
+
+.logo{
+  color: rgba(0, 0, 0, 1);
+}
+
+.logo:hover,:focus{
+  color: #2196F3;
+}
+
+.mail{
+  color:#757575;
+}
+
+.mail:hover,:focus{
+  color:#2196F3;
 }
