@@ -2,11 +2,13 @@
 body {
   color: #212121;
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
 }
 
 :root{
   --color: #2196F3;
   --color-back: #757575;
+  --color-text: #ffffff;
 }
 
 .button {
@@ -14,18 +16,15 @@ body {
 }
 .button:hover{
   background-color: var(--color);
-  color: #FFFFFF;;
-}
-.logo{
-  font-weight: 700;
-}
-.logo:hover,:focus{
-  color:var(--color);
+  color: var(--color-text);
 }
 .link {
   color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
 }
-.link:hover,:focus {
+.link:hover,:focus:hover {
   color:var(--color);
 }
 .text {
@@ -39,13 +38,58 @@ body {
 }
 .logo {
   color: inherit;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
 .logo:hover,:focus{
   color: var(--color);
 }
+
 .mail{
   color:var(--color-back);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
 }
 .mail:hover,:focus{
   color:var(--color);
+}
+
+.headline{
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+}
+.headline-2{
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+.headline-3{
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+.Lorem-ipsum-1{
+  font-weight: 700;
+  font-size: 14px;
+    line-height: 1.1;
+}
+.Lorem-ipsum-2{
+  color: var(--color-back);
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 700;
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.nickname{
+  color: var(--color-back);
+  font-size: 16px;
+  line-height: 1.2;
 }
