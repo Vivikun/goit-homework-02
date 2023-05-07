@@ -2,94 +2,247 @@
 body {
   color: #212121;
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
 }
 
 :root{
   --color: #2196F3;
   --color-back: #757575;
   --color-text: #ffffff;
+  --color-box: #2F303A;
+  --color-body: #212121;
+  --color-image: #F5F4FA;
+  --color-mine: #E5E5E5;
+  --color-mail: rgba(255, 255, 255, 0.6);
+  --color-line: rgba(236, 236, 236, 1);
+}
+.list{
+  list-style: none;
 }
 
 .button {
   cursor: pointer;
+  background: var(--color);
+  font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  
+    color: var(--color-text);
 }
-.button:hover{
-  background-color: var(--color);
+
+.button:hover {
+    background: var(--color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--color-body);
+}
+.button-1{
+  cursor: pointer;
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: var(--color-image);
+}
+.button-1:hover{
+  background: var(--color);
   color: var(--color-text);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
+
 .link {
+  text-decoration: none;
   color: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+  letter-spacing: 0.02em;
 }
-.link:hover,:focus:hover {
-  color:var(--color);
+
+.link:hover,
+:focus:hover {
+  color: var(--color);
 }
+.text-1{
+font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+}
+.basic-text-1{
+font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
+  color: var(--color-back);
+}
+
 .text {
   font-size: 18px;
   line-height: 1.6;
 }
+
 .basic-text {
   font-size: 16px;
   line-height: 1.8;
   color: var(--color-back);
 }
+.mail-1{
+  text-decoration: none;
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+  
+    letter-spacing: 0.03em;
+  
+    color: var(--color-mail);
+}
+.link-0{
+  text-decoration: none;
+font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+.link-0:hover{
+  color: var(--color);
+}
+.mail-1:hover{
+color: var(--color);
+}
+.web{
+  color: var(--color);
+}
+
 .logo {
+  text-decoration: none;
   color: inherit;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }
-.logo:hover,:focus{
+
+.logo:hover,
+:focus {
+  color: var(--color);
+}
+.logo-0{
+  font-family: 'Raleway';
+  text-decoration: none;
+font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+.logo-0:hover,:focus{
   color: var(--color);
 }
 
-.mail{
-  color:var(--color-back);
+.mail {
+  text-decoration: none;
+  color: var(--color-back);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
 }
-.mail:hover,:focus{
-  color:var(--color);
+
+.mail:hover,
+:focus {
+  color: var(--color);
+}
+.box-1{
+ background-color: var(--color-box);
+}
+.box-2{
+  background: var(--color-image);
+}
+.box-3{
+  background: var(--color-box);
 }
 
-.headline{
+.headline {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
+  /* or 136% */
+  
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  color: var(--color-text);
 }
-.headline-2{
+
+.headline-2 {
   font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+    letter-spacing: 0.03em;
 }
-.headline-3{
+
+.headline-3 {
   font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+    letter-spacing: 0.03em;
 }
-.Lorem-ipsum-1{
+
+.Lorem-ipsum-1 {
   font-weight: 700;
   font-size: 14px;
-    line-height: 1.1;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
-.Lorem-ipsum-2{
+
+.Lorem-ipsum-2 {
   color: var(--color-back);
-  font-size: 14px;
-  line-height: 1.7;
-  font-weight: 700;
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5px;
+    letter-spacing: 0.03em;
 }
+
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
+    letter-spacing: 0.03em;
 }
-.nickname{
+
+.nickname {
   color: var(--color-back);
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
+    letter-spacing: 0.03em;
+}
+.image-1{
+  font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
 }
