@@ -2,6 +2,7 @@
 body {
   color: #212121;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 :root{
@@ -20,11 +21,11 @@ body {
 }
 
 .button {
+  font-family: 'Roboto';
   cursor: pointer;
-  background: var(--color);
   font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
     /* identical to box height, or 188% */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -32,35 +33,37 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-  
+    background-color: var(--color);
     color: var(--color-text);
 }
-
-.button:hover {
-    background: var(--color);
+.button:hover,
+.button:focus{
+  background-color: var(--color);
+  color: var(--color-body);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    color: var(--color-body);
 }
 .button-1{
+  font-family: 'Roboto';
   cursor: pointer;
   font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.6;
     /* identical to box height, or 162% */
     border-radius: 4px;
     text-align: center;
     letter-spacing: 0.03em;
     background: var(--color-image);
 }
-.button-1:hover{
-  background: var(--color);
+.button-1:hover,
+.button-1:focus{
+  background-color: var(--color);
   color: var(--color-text);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
-.link {
+.link{
   text-decoration: none;
   color: inherit;
   font-weight: 500;
@@ -70,13 +73,13 @@ body {
 }
 
 .link:hover,
-:focus:hover {
+.link:focus{
   color: var(--color);
 }
 .text-1{
 font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
@@ -84,19 +87,19 @@ font-weight: 700;
 .basic-text-1{
 font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   /* identical to box height, or 188% */
 
   letter-spacing: 0.03em;
   color: var(--color-back);
 }
 
-.text {
+.text{
   font-size: 18px;
   line-height: 1.6;
 }
 
-.basic-text {
+.basic-text{
   font-size: 16px;
   line-height: 1.8;
   color: var(--color-back);
@@ -105,7 +108,7 @@ font-weight: 400;
   text-decoration: none;
   font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.8;
     /* or 171% */
   
     letter-spacing: 0.03em;
@@ -116,17 +119,20 @@ font-weight: 400;
   text-decoration: none;
 font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.8;
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--color-text);
 }
-.link-0:hover{
+.link-0:hover,
+.link-0:focus{
   color: var(--color);
 }
-.mail-1:hover{
-color: var(--color);
+.mail-1:hover,
+.mail-1:focus{
+  color: var(--color);
 }
+
 .web{
   color: var(--color);
 }
@@ -142,7 +148,7 @@ color: var(--color);
 }
 
 .logo:hover,
-:focus {
+.logo:focus {
   color: var(--color);
 }
 .logo-0{
@@ -150,12 +156,13 @@ color: var(--color);
   text-decoration: none;
 font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--color-text);
 }
-.logo-0:hover,:focus{
+.logo-0:hover,
+.logo-0:focus{
   color: var(--color);
 }
 
@@ -168,17 +175,17 @@ font-weight: 700;
 }
 
 .mail:hover,
-:focus {
+.mail:focus {
   color: var(--color);
 }
 .box-1{
  background-color: var(--color-box);
 }
 .box-2{
-  background: var(--color-image);
+  background-color: var(--color-image);
 }
 .box-3{
-  background: var(--color-box);
+  background-color: var(--color-box);
 }
 
 .headline {
@@ -240,9 +247,4 @@ font-weight: 700;
   text-align: center;
     letter-spacing: 0.03em;
 }
-.image-1{
-  font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-}
+
